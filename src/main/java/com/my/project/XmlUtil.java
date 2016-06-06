@@ -36,7 +36,7 @@ public class XmlUtil {
             processingInstruction.setData( "type=\"text/xsl\" href=\"test.xsl\"" );
 
             // 查询Element并修改属性
-            Element templateId = (Element) (xpath.compile( "/PEOPLE/PERSON[@age='30']" ).evaluate( doc,
+            Element templateId = (Element) (xpath.compile( "/people/person[@age='30']" ).evaluate( doc,
                     XPathConstants.NODE ));
             templateId.setAttribute("age", "31");
 
